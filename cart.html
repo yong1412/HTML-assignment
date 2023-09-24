@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="View Port" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>cart list</title>
+    <style>
+       
+   </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+  
+      <div class="logo">
+      <a href="index.html" alt="Home">
+      <img src="Hex Logo.png" alt="Logo">
+      </a>
+      </div>
+  
+      <ul class="nav-links">
+  
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+  
+        <div class="menu">
+          <li><a class="home" href="index.html">Home</a></li>
+          <li class="services">
+          <a href="pc_component.html">Component</a>
+            <ul class="dropdown_com">
+              <li><a class="trans-com1" href="motherboard.html">Motherboard</a></li>
+              <li><a class="trans-com2" href="cpu.html">Cental Processing Unit (CPU)</a></li>
+              <li><a class="trans-com3" href="psu.html">Power Supply Unit</a></li>
+              <li><a class="trans-com4" href="cooler.html">Cooler</a></li>
+              <li><a class="trans-com5" href="pc-case.html">PC Case</a></li>
+              <li><a class="trans-com6" href="gpu.html">Gpu</a></li>
+              <li><a class="trans-com7" href="ram.html">Ram</a></li>
+            </ul>
+          </li>
+          <li class="services">
+              <a href="pc_accessories.html">Accessories</a>
+                <ul class="dropdown_acces">
+                <li><a class="trans-acces1" href="keyboard.html">Keyboard</a></li>
+                <li><a class="trans-acces2" href="mice.html">Mice & Mouse Pad</a></li>
+                <li><a class="trans-acces3" href="headsets.html">Headset & Audio</a></li>
+                <li><a class="trans-acces4" href="speaker.html">Speaker</a></li>
+                </ul>
+              </li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li> 
+        </div>
+      </ul>
+    </nav>
+  </header>
+
+ <h3>Cart list</h3>
+
+
+    <ul id="cart_list">
+        <div class="Yourcart"><p>Your cart</p></div>
+        <li>
+            <div class="cartinfo">
+            <span class="item_name"><h5>MacBook Air 15-inch(M2 chip)</h5></span>
+            <span class="item_price">MYR 6,199.00</span>
+            <img src="Macbook_Air.jpg" alt="macbookair" width="400" height="400">
+            <button onclick="removecart(this)">Remove</button>
+            </div>
+        </li>
+        
+            
+        <li>
+            <div class="cartinfo">
+            <span class="item_name"><h5>Samsung Galaxy S23 Ultra (512gb|12gb)</h5></span>
+            <span class="item_price">MYR 6,199.00</span>
+            <img src="applemagicmouse.jpg" alt="applemagicmouse" width="400" height="400">
+            <button onclick="removecart(this)">Remove</button>
+            </div>
+            
+        </li>
+        
+        
+        <li>
+            <div class="cartinfo">
+            <span class="item_name"><h5>Apple - Magic Mouse 2 (Silver)</h5></span>
+            <span class="item_price">MYR 319.00</span>
+            <img src="S23Ultra.jpeg" alt="S23Ultra" width="400" height="400">
+            <button onclick="removecart(this)">Remove</button>
+            </div>
+        </li>
+      
+    </ul>
+
+    <script>
+        function removecart(button) {
+            const parentElement = button.parentNode;
+            parentElement.remove();
+        }
+    </script>
+    
+
+
+    <footer>
+      <div class="icons-container">
+          <a class="icons1" href="https://www.facebook.com/profile.php?id=100095192364242" target="_blank">
+              <img src="iconsfacebook.png" >
+          </a>
+        
+          <a class="icons2" href="https://www.instagram.com/hex_company.tar/" target="_blank">
+              <img src="iconsinstagram.png" >
+          </a>
+          
+          <a class="icons3" href="https://www.tiktok.com/@hex_company.tar?is_from_webapp=1&sender_device=pc" target="_blank">
+              <img src="iconstiktok.png" >
+          </a>
+          
+          <a class="icons4" href="https://twitter.com/HEX_company_tar" target="_blank">
+              <img src="iconstwitter.png" >
+          </a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>cpu</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    .flex-container {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .subpage-grid {
+      flex: 1 0 calc(33.33% - 20px);
+      border: 1px solid;
+      height: 400px;
+      background-color: grey;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 18px;
+      flex-direction: column;
+    }
+
+    @media screen and (max-width: 900px) {
+      .subpage-grid {
+        flex-basis: calc(50% - 10px);
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .subpage-grid {
+        flex-basis: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+  
+      <div class="logo">
+      <a href="index.html" alt="Home">
+      <img src="Hex Logo.png" alt="Logo">
+      </a>
+      </div>
+  
+      <ul class="nav-links">
+  
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+  
+        <div class="menu">
+          <li><a class="home" href="index.html">Home</a></li>
+          <li class="services">
+          <a href="pc_component.html">Component</a>
+            <ul class="dropdown_com">
+              <li><a class="trans-com1" href="motherboard.html">Motherboard</a></li>
+              <li><a class="trans-com2" href="cpu.html">Cental Processing Unit (CPU)</a></li>
+              <li><a class="trans-com3" href="psu.html">Power Supply Unit</a></li>
+              <li><a class="trans-com4" href="cooler.html">Cooler</a></li>
+              <li><a class="trans-com5" href="pc-case.html">PC Case</a></li>
+              <li><a class="trans-com6" href="gpu.html">Gpu</a></li>
+              <li><a class="trans-com7" href="ram.html">Ram</a></li>
+            </ul>
+          </li>
+          <li class="services">
+              <a href="pc_accessories.html">Accessories</a>
+                <ul class="dropdown_acces">
+                <li><a class="trans-acces1" href="keyboard.html">Keyboard</a></li>
+                <li><a class="trans-acces2" href="mice.html">Mice & Mouse Pad</a></li>
+                <li><a class="trans-acces3" href="headsets.html">Headset & Audio</a></li>
+                <li><a class="trans-acces4" href="speaker.html">Speaker</a></li>
+                </ul>
+              </li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li> 
+        </div>
+      </ul>
+    </nav>
+  </header>
+    
+  <div class="flex-container">
+  
+  <div class="subpage-grid"><img src="logo.jpeg" width="100px" height="100px" alt="Prod 1 (img)">
+    Prod 1</div>
+  
+  <div class="subpage-grid"><img src="logo.jpeg" width="100px" height="100px" alt="Prod 2 (img)">
+    Prod 2</div>
+  
+  <div class="subpage-grid"><img src="logo.jpeg" width="100px" height="100px" alt="Prod 3 (img)">
+    Prod 3</div>
+  
+  <div class="subpage-grid"><img src="logo.jpeg" width="100px" height="100px" alt="Prod 4 (img)">
+    Prod 4</div>
+  
+  <div class="subpage-grid"><img src="logo.jpeg" width="100px" height="100px" alt="Prod 5 (img)">
+    Prod 5</div>
+  
+  <div class="subpage-grid"><img src="logo.jpeg" width="100px" height="100px" alt="Prod 6 (img)">
+    Prod 6</div>
+  
+  <div class="subpage-grid"><img src="logo.jpeg" width="100px" height="100px" alt="Prod 7 (img)">
+    Prod 7</div>
+  
+  <div class="subpage-grid"><img src="logo.jpeg" width="100px" height="100px" alt="Prod 8 (img)">
+    Prod 8</div>
+  
+  <div class="subpage-grid"><img src="logo.jpeg" width="100px" height="100px" alt="Prod 9 (img)">
+    Prod 9</div>
+  
+  <div class="subpage-grid"><img src="logo.jpeg" width="100px" height="100px" alt="Prod 10 (img)">
+    Prod 10</div>
+  
+  <div class="subpage-grid"><img src="logo.jpeg" width="100px" height="100px" alt="Prod 11 (img)">
+    Prod 11</div>
+  
+  <div class="subpage-grid"><img src="logo.jpeg" width="100px" height="100px" alt="Prod 12 (img)">
+    Prod 12</div>
+  </div>
+  
+  <footer>
+    <div class="icons-container">
+        <a class="icons1" href="https://www.facebook.com/profile.php?id=100095192364242" target="_blank">
+            <img src="iconsfacebook.png" >
+        </a>
+      
+        <a class="icons2" href="https://www.instagram.com/hex_company.tar/" target="_blank">
+            <img src="iconsinstagram.png" >
+        </a>
+        
+        <a class="icons3" href="https://www.tiktok.com/@hex_company.tar?is_from_webapp=1&sender_device=pc" target="_blank">
+            <img src="iconstiktok.png" >
+        </a>
+        
+        <a class="icons4" href="https://twitter.com/HEX_company_tar" target="_blank">
+            <img src="iconstwitter.png" >
+        </a>
+      </div>
+  </footer>
+</body>
+</html>

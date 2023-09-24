@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flexbox</title>
+
+  <style>
+    .flex-container {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .subpage-grid {
+      flex: 1 0 calc(33.33% - 20px);
+      border: 1px solid;
+      height: 400px;
+      background-color: grey;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 18px;
+      flex-direction: column;
+    }
+
+    @media screen and (max-width: 900px) {
+      .subpage-grid {
+        flex-basis: calc(50% - 10px);
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .subpage-grid {
+        flex-basis: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+  
+  <div class="subpage-grid"><img src="logo.jpeg" width="100px" height="100px" alt="Prod 1 (img)">
+    Prod 1</div>
+  
+  <div class="subpage-grid"><img src="logo.jpeg" width="100px" height="100px" alt="Prod 2 (img)">
+    Prod 2</div>
+  
+  <div class="subpage-grid"><img src="logo.jpeg" width="100px" height="100px" alt="Prod 3 (img)">
+    Prod 3</div>
+  
+  <div class="subpage-grid"><img src="logo.jpeg" width="100px" height="100px" alt="Prod 4 (img)">
+    Prod 4</div>
+  
+  <div class="subpage-grid"><img src="logo.jpeg" width="100px" height="100px" alt="Prod 5 (img)">
+    Prod 5</div>
+  
+  <div class="subpage-grid"><img src="logo.jpeg" width="100px" height="100px" alt="Prod 6 (img)">
+    Prod 6</div>
+  
+  <div class="subpage-grid"><img src="logo.jpeg" width="100px" height="100px" alt="Prod 7 (img)">
+    Prod 7</div>
+  
+  <div class="subpage-grid"><img src="logo.jpeg" width="100px" height="100px" alt="Prod 8 (img)">
+    Prod 8</div>
+  
+  <div class="subpage-grid"><img src="logo.jpeg" width="100px" height="100px" alt="Prod 9 (img)">
+    Prod 9</div>
+  
+  <div class="subpage-grid"><img src="logo.jpeg" width="100px" height="100px" alt="Prod 10 (img)">
+    Prod 10</div>
+  
+  <div class="subpage-grid"><img src="logo.jpeg" width="100px" height="100px" alt="Prod 11 (img)">
+    Prod 11</div>
+  
+  <div class="subpage-grid"><img src="logo.jpeg" width="100px" height="100px" alt="Prod 12 (img)">
+    Prod 12</div>
+  </div>
+</body>
+</html>
